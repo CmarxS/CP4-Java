@@ -213,10 +213,22 @@ IDE utilizada: IntelliJ
 ---
 
 ## Prints e evidências
-Adicione no repositório (ex.: `docs/prints/`):
-- **Spring Initializr** (config final e dependências)
 - Testes no **Postman/Insomnia** (GET/POST/PUT/DELETE)
-- Saída do console com SQL do Hibernate
+
+###GET (Find All)
+<img width="960" height="701" alt="Get_findAll" src="https://github.com/user-attachments/assets/5b74030d-7d91-4de0-a330-1f8b7fdc4144" />
+
+###GET (Find by ID)
+<img width="960" height="601" alt="Post" src="https://github.com/user-attachments/assets/170650ec-0d1b-4916-b976-7550ab0913bf" />
+
+###POST
+<img width="960" height="601" alt="Post" src="https://github.com/user-attachments/assets/a4c45d7a-2758-4025-b6e8-eef8e9881479" />
+
+###PUT
+<img width="960" height="599" alt="Put" src="https://github.com/user-attachments/assets/6381e8ed-723c-46df-9aca-82e991972066" />
+
+###DELETE
+<img width="960" height="603" alt="Delete" src="https://github.com/user-attachments/assets/cb4a2ae5-3568-4f16-93c8-089417dab867" />
 
 ---
 
