@@ -12,7 +12,6 @@
 - [Entidade (Model)](#entidade-model)
 - [Endpoints (CRUD)](#endpoints-crud)
 - [Exemplos de requisições (cURL/Postman)](#exemplos-de-requisições-curlpostman)
-- [HATEOAS (links)](#hateoas-links)
 - [Integrantes](#integrantes)
 - [Prints e evidências](#prints-e-evidências)
 
@@ -191,23 +190,6 @@ curl -X DELETE http://localhost:8081/brinquedos/1
 
 ---
 
-## HATEOAS (links)
-Respostas podem incluir links com `_links` (self, update, delete). Exemplo (GET por id):
-```json
-{
-  "id": 1,
-  "nome": "Bola de Futebol Infantil",
-  "tipo": "Bola",
-  "classificacao": "5-8 anos",
-  "tamanho": "3",
-  "preco": 79.9,
-  "_links": {
-    "self": { "href": "http://localhost:8081/brinquedos/1" },
-    "update": { "href": "http://localhost:8081/brinquedos/1" },
-    "delete": { "href": "http://localhost:8081/brinquedos/1" }
-  }
-}
-```
 
 ---
 
