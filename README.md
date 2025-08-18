@@ -54,7 +54,6 @@ src/main/java/br/com/fiap/esportes
  ├─ controller/          # BrinquedoController
  ├─ model/               # Brinquedo (Entity)
  ├─ repository/          # BrinquedoRepository (JpaRepository)
- ├─ service/             # (opcional neste exercício)
  └─ EsportesApplication  # classe principal
 
 src/main/resources
@@ -212,7 +211,7 @@ Respostas podem incluir links com `_links` (self, update, delete). Exemplo (GET 
 
 ---
 
-## Deploy (opcional)
+## Deploy
 1. Gerar JAR: `mvn clean package -DskipTests`
 2. Definir variáveis de ambiente em produção: `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`
 3. Executar: `java -jar target/esportes-0.0.1-SNAPSHOT.jar`
@@ -235,7 +234,7 @@ IDE utilizada: IntelliJ
 Adicione no repositório (ex.: `docs/prints/`):
 - **Spring Initializr** (config final e dependências)
 - Testes no **Postman/Insomnia** (GET/POST/PUT/DELETE)
-- Saída do console com SQL do Hibernate (opcional)
+- Saída do console com SQL do Hibernate
 
 ---
 
