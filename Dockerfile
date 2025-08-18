@@ -15,10 +15,10 @@ COPY src ./src
 RUN mvn clean install -DskipTests
 
 # Usando uma imagem base mais leve para executar o aplicativo
-FROM openjdk:17-jdk-slim
+FROM openjdk:21-jdk-slim
 
 # Expor a porta 8080
-EXPOSE 8080
+EXPOSE 8081
 
 # Definindo o diretório de trabalho
 WORKDIR /app
