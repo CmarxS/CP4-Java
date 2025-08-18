@@ -22,7 +22,7 @@ API para **empresa de brinquedos esportivos** (crianças até 12 anos), com **CR
 
 **Campos obrigatórios:** `id`, `nome`, `tipo`, `classificacao`, `tamanho`, `preco`.
 
-Base URL local: `https://cp4-java-g7er.onrender.com`.
+Base URL local: `https://cp4-java-g7er.onrender.com` ou `http://localhost:8081/`.
 
 ---
 
@@ -215,19 +215,19 @@ IDE utilizada: IntelliJ
 ## Prints e evidências
 - Testes no **Postman/Insomnia** (GET/POST/PUT/DELETE)
 
-###GET (Find All)
+### GET (Find All)
 <img width="926" height="701" alt="Get_findAll" src="https://github.com/user-attachments/assets/cd0c4d97-7263-42a1-a517-f9681cf64bbd" />
 
-###GET (Find by ID)
+### GET (Find by ID)
 <img width="787" height="607" alt="Get_findById" src="https://github.com/user-attachments/assets/0ecead84-6a88-40d2-aeea-ec326d7fdc46" />
 
-###POST
+### POST
 <img width="784" height="601" alt="Post" src="https://github.com/user-attachments/assets/f552d2cd-3df8-4901-87fc-3dda475f36a3" />
 
-###PUT
+### PUT
 <img width="796" height="599" alt="Put" src="https://github.com/user-attachments/assets/016f1ad3-6426-49c0-82e5-a408e4df3f39" />
 
-###DELETE
+### DELETE
 <img width="789" height="603" alt="Delete" src="https://github.com/user-attachments/assets/6b1b228e-734f-4b82-a7b2-4376c05d336f" />
 
 ---
