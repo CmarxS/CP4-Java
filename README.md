@@ -25,14 +25,14 @@ API para **empresa de brinquedos esportivos** (crianças até 12 anos), com **CR
 
 **Campos obrigatórios:** `id`, `nome`, `tipo`, `classificacao`, `tamanho`, `preco`.
 
-Base URL local: `http://localhost:8081`.
+Base URL local: `https://cp4-java-g7er.onrender.com`.
 
 ---
 
 ## Stack e versões
 - **Java**: 21  
 - **Spring Boot**: 3.5.4  
-- **Banco**: Oracle (ORCL/XEPDB1)  
+- **Banco**: Oracle
 - **Build**: Maven
 
 ---
@@ -66,7 +66,6 @@ src/main/resources
 ---
 
 ## Configuração (application.properties)
-> **Importante:** não versionar credenciais reais. Use variáveis de ambiente em produção.
 
 ```properties
 # Porta do servidor
@@ -113,8 +112,6 @@ CREATE TABLE TDS_TB_BRINQUEDO (
   PRECO         NUMBER(10,2)    NOT NULL
 );
 ```
-
-> Caso sua instância não suporte `IDENTITY`, use **SEQUENCE + TRIGGER** ou `@GeneratedValue(strategy=SEQUENCE)` com `@SequenceGenerator`.
 
 ---
 
