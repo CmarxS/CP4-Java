@@ -93,8 +93,6 @@ logging.level.org.hibernate.SQL=debug
 logging.level.org.hibernate.orm.jdbc.bind=trace
 ```
 
-> **Atenção ao `context-path`:** se usar `server.servlet.context-path=/brinquedos`, **não** mapeie o controller com `@RequestMapping("/brinquedos")`, para evitar rota duplicada (`/brinquedos/brinquedos`). Prefira manter **sem** `context-path` e usar `@RequestMapping("/brinquedos")` no controller.
-
 ---
 
 ## Banco de dados (DDL Oracle)
@@ -127,7 +125,7 @@ Campos principais:
 ---
 
 ## Endpoints (CRUD)
-**Base path recomendado:** `/brinquedos`
+**Base path:** `/brinquedos`
 
 - **GET** `/brinquedos` — lista todos
 - **GET** `/brinquedos/{id}` — detalhe por id
