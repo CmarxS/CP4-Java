@@ -13,9 +13,7 @@
 - [Endpoints (CRUD)](#endpoints-crud)
 - [Exemplos de requisições (cURL/Postman)](#exemplos-de-requisições-curlpostman)
 - [HATEOAS (links)](#hateoas-links)
-- [Erros comuns e soluções](#erros-comuns-e-soluções)
-- [Deploy (opcional)](#deploy-opcional)
-- [Integrantes e entrega](#integrantes-e-entrega)
+- [Integrantes](#integrantes)
 - [Prints e evidências](#prints-e-evidências)
 
 ---
@@ -213,14 +211,6 @@ Respostas podem incluir links com `_links` (self, update, delete). Exemplo (GET 
   }
 }
 ```
-
----
-
-## Erros comuns e soluções
-- **Swagger + HATEOAS (HAL) em Boot 3.5.x**: pode falhar no startup. Solução simples: remover Swagger ou usar SpringDoc 2.6.0 **sem** HAL.
-- **Context-path duplicado**: `server.servlet.context-path=/brinquedos` **+** `@RequestMapping("/brinquedos")` gera rotas `/brinquedos/brinquedos`. Remova o context-path ou ajuste o mapping do controller.
-- **Lombok não gera setter do `id`**: em dev, adicionar setter manual ou atualizar o objeto buscado do BD antes de salvar (abordagem recomendada em produção).
-- **IDENTITY no Oracle**: se a sua versão não suportar, use sequence/trigger.
 
 ---
 
