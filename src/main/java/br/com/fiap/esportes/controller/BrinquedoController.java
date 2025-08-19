@@ -50,6 +50,36 @@ public class BrinquedoController {
         return ResponseEntity.notFound().build();
     }
 
+     // Endpoint PATCH para atualizar parcialmente um brinquedo
+    @PatchMapping("/{id}")
+    public ResponseEntity<Brinquedo> atualizarParcialmente(@PathVariable Long id, @RequestBody Brinquedo brinquedoAtualizado) {
+        Optional<Brinquedo> brinquedo = brinquedoRepository.findById(id);
+        if (brinquedo.isPresent()) {
+            Brinquedo brinquedoExistente = brinquedo.get();
+
+            if (brinquedoAtualizado.getNome() != null) {
+                brinquedoExistente.setNome(brinquedoAtualizado.getNome());
+            }
+            if (brinquedoAtualizado.getTipo() != null) {
+                brinquedoExistente.setTipo(brinquedoAtualizado.getTipo());
+            }
+            if (brinquedoAtualizado.getClassificacao() != null) {
+                brinquedoExistente.setClassificacao(brinquedoAtualizado.getClassificacao());
+            }
+            if (brinquedoAtualizado.getTamanho() != null) {
+                brinquedoExistente.setTamanho(brinquedoAtualizado.getTamanho());
+            }
+            if (brinquedoAtualizado.getPreco() != null) {
+                brinquedoExistente.setPreco(brinquedoAtualizado.getPreco());
+            }
+
+            Brinquedo brinquedoSalvo = brinquedoRepository.save(brinquedoExistente);
+            return ResponseEntity.ok(brinquedoSalvo);
+        }
+        return ResponseEntity.notFound().build();
+    }
+}
+
     // Endpoint para deletar um brinquedo
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletar(@PathVariable Long id) {
