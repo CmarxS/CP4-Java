@@ -130,6 +130,7 @@ Campos principais:
 - **POST** `/brinquedos` — cria novo
 - **PUT** `/brinquedos/{id}` — atualiza todos os campos
 - **DELETE** `/brinquedos/{id}` — exclui por id
+- **PATCH** `/brinquedos/{id}` — atualiza um campo em específico
 
 Payload JSON (POST/PUT):
 ```json
@@ -247,6 +248,10 @@ IDE utilizada: IntelliJ
 
 ### DELETE
 <img width="789" height="603" alt="Delete" src="https://github.com/user-attachments/assets/6b1b228e-734f-4b82-a7b2-4376c05d336f" />
+
+### PATCH
+<img width="787" height="593" alt="image" src="https://github.com/user-attachments/assets/32bca9f7-8818-4706-be98-7d972481531e" />
+
 
 ---
 
