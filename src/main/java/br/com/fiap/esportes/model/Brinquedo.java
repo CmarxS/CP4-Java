@@ -19,10 +19,6 @@ public class Brinquedo extends RepresentationModel<Brinquedo> {
     @Column(name = "ID")
     private Long id;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     @Column(name = "NOME", nullable = false, length = 100)
     private String nome;
 
